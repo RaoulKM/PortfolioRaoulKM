@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raoul Km - Développeur Full-Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="blue">
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="theme-selector">
+        <div class="theme-grid">
+            <button class="theme-btn theme-blue active" data-theme="blue" title="Bleu"></button>
+            <button class="theme-btn theme-green" data-theme="green" title="Vert"></button>
+            <button class="theme-btn theme-purple" data-theme="purple" title="Violet"></button>
+            <button class="theme-btn theme-orange" data-theme="orange" title="Orange"></button>
+            <button class="theme-btn theme-dark" data-theme="dark" title="Sombre"></button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Raoul Km</div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content animate-fadeInUp">
+                    <h1 class="hero-title">
+                        Raoul Km<br>
+                        Développeur Full-Stack
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transforme les idées en réalité numérique.
+                    </p>
+                    <p class="hero-description">
+                        Je crée des applications web et mobiles modernes, performantes et intuitives,
+                        en combinant un design élégant avec une ingénierie logicielle robuste.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projets" class="btn btn-primary">
+                            Voir mes projets
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Contactez-moi
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="hero-circle">
+                        <i class="fas fa-code hero-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-user"></i>
+                        À propos de moi
+                    </div>
+                    <h2 class="section-title">Passion & Innovation</h2>
+                    <p class="section-description">
+                        Étudiant passionné avec une vision claire : révolutionner l'expérience utilisateur
+                        à travers des solutions technologiques innovantes.
+                    </p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p>
+                            Actuellement en DUT Génie Logiciel à l'IUT Fotso Victor de Bandjoun, je me spécialise
+                            dans le développement d'applications web et mobiles modernes. Mon parcours académique
+                            s'enrichit constamment d'expériences pratiques concrètes.
+                        </p>
+                        <p>
+                            Mes domaines d'expertise couvrent les interfaces utilisateurs modernes, la gestion
+                            de projets complexes et l'Internet des Objets (IoT). Je m'efforce de créer des
+                            solutions qui simplifient la vie quotidienne tout en repoussant les limites
+                            de l'innovation numérique en Afrique.
+                        </p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Projets Réalisés</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Années d'Expérience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-tools"></i>
+                        Mes compétences
+                    </div>
+                    <h2 class="section-title">Technologies & Expertise</h2>
+                    <p class="section-description">
+                        Une palette complète de technologies modernes pour créer des expériences
+                        utilisateur exceptionnelles et des solutions robustes.
+                    </p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-title">Frontend</div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">HTML5/CSS3</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="skill-title">Backend</div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">API REST</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="skill-title">Mobile & IoT</div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">Capteurs IoT</span>
+                            <span class="skill-tag">Python IoT</span>
+                            <span class="skill-tag">Raspberry Pi</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="skill-title">Outils & DevOps</div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">jsPDF</span>
+                            <span class="skill-tag">XLSX</span>
+                            <span class="skill-tag">Day.js</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-project-diagram"></i>
+                        Mes projets
+                    </div>
+                    <h2 class="section-title">Quelques réalisations</h2>
+                    <p class="section-description">
+                        Découvrez une sélection de mes travaux, illustrant mes compétences
+                        en développement full-stack et ma capacité à résoudre des problèmes complexes.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card animate-fadeInUp">
+                        <div class="project-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Développement Web</span>
+                            </div>
+                            <h3 class="project-title">Plateforme de Gestion Agricole</h3>
+                            <p class="project-description">
+                                Une application web complète pour la gestion des exploitations agricoles,
+                                intégrant la planification des cultures, la gestion des stocks et l'analyse de données.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">API REST</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-link"></i>
+                                    Démo en ligne
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-fadeInUp">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Application Mobile</span>
+                            </div>
+                            <h3 class="project-title">Application de Suivi de la Santé</h3>
+                            <p class="project-description">
+                                Une application mobile intuitive qui permet aux utilisateurs de suivre
+                                leurs activités physiques, leur sommeil et leur alimentation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-link"></i>
+                                    Démo en ligne
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-fadeInUp">
+                        <div class="project-image">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Internet des Objets</span>
+                            </div>
+                            <h3 class="project-title">Système de Surveillance IoT</h3>
+                            <p class="project-description">
+                                Un système basé sur Arduino et Python pour surveiller en temps réel
+                                les conditions environnementales et envoyer des alertes.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">IoT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-link"></i>
+                                    Démo en ligne
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-paper-plane"></i>
+                        Contactez-moi
+                    </div>
+                    <h2 class="section-title">Parlons de votre projet</h2>
+                    <p class="section-description">
+                        Que vous ayez une question, une idée ou un projet à discuter,
+                        n'hésitez pas à me contacter. Je suis toujours ouvert aux nouvelles opportunités.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Localisation</h4>
+                                <p>Bandjoun, Ouest, Cameroun</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>raoulkm@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Téléphone</h4>
+                                <p>(+237) 6xx-xx-xx-xx</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Votre Nom</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Votre Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Raoul Km. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
